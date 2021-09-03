@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+html, body {
+  margin: 0;
+}
+
+.fullscreen-container {
+  background-image: url('bg.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.login-container {
+  /* background-color: hsla(160, 100%, 10%, 0.4); */
+  background: linear-gradient(180deg, hsla(160, 100%, 10%, 0.2) 0%, hsla(160, 100%, 10%, 0.35) 50%, hsla(160, 100%, 10%, 0.5) 100%);
+  padding: 1rem;
+  width: 50%;
+  min-width: 300px;
+  max-width: 500px;
+  transition: ease all .4s;
+}
+
+.login-title {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  cursor: default;
+  text-shadow: 0px 0px 5px black;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: .3rem;
+  text-shadow: 0px 0px 5px black;
+}
+
+.form-group input {
+  /* reset all styles
+  background: none;
+  border: none;
+  outline: none;*/
+  background-color: hsla(160, 100%, 90%, 0.3);
+  font-size: 1.2rem;
+  padding: .5rem;
+  border: 1px solid hsla(160, 100%, 14%, 0.693);
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  transition: ease all .4s;
+  text-shadow: 0px 0px 3px black;
+}
+
+.form-group input:hover {
+  background: hsla(160, 100%, 100%, 0.3);
+}
+
+.form-group input:focus {
+  border: 1px solid hsla(160, 100%, 100%, 0.3);
+  background: hsla(160, 100%, 100%, 0.3);
+  box-shadow: 0px 0px 10px hsla(160, 100%, 100%, 0.3);
+}
+
+.login-button {
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid hsla(160, 100%, 14%, 0.693);
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  background: hsla(160, 100%, 10%, 0.693);
+  color: white;
+  outline: none;
+  transition: ease all .4s;
+  text-shadow: 0px 0px 5px black;
+}
+
+.login-button:hover, .login-button:focus {
+  background: hsla(160, 100%, 11%, 0.5);
+  border: 1px solid hsla(160, 100%, 70%, 0.693);
+  box-shadow: 0px 0px 5px hsla(160, 100%, 70%, 0.693);
+}
+
+.forgot-password {
+  text-align: right;
+}
+
+.forgot-password a {
+  color: white;
+}
+.forgot-password a:hover {
+  text-decoration: none;
+}
